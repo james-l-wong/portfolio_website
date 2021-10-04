@@ -10,9 +10,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          James Wong
-          {/* (designer)+{'<'}developer{'>'} */}
+        <h1 className={styles.title}>James Wong</h1>
+        <h1>
+          (designer)+{"<"}developer{">"}
         </h1>
 
         <p className={styles.description}>
@@ -24,9 +24,8 @@ export default function Home() {
           <br />
           <br />
           In his down time, he enjoys disassembling and modifying the different
-          products around him. When not tinkering, you can find him digging hard
-          into a book or taking long walks in the park while listening to John
-          Mayer.
+          products around him. When not tinkering, you can find him buried in a
+          book or taking long walks in the park while listening to John Mayer.
         </p>
       </main>
 
