@@ -1,25 +1,35 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>James Wong</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          James Wong
+          {/* (designer)+{'<'}developer{'>'} */}
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          James is a developer based in Sydney, Australia. Currently, he is
+          undertaking a Bachelor of Computer Science at the University of New
+          South Wales. He has a passion in creatively integrating technology
+          into solving everyday problems. From simple products to websites and
+          mobile apps, he is able to build them all.
+          <br />
+          <br />
+          In his down time, he enjoys disassembling and modifying the different
+          products around him. When not tinkering, you can find him digging hard
+          into a book or taking long walks in the park while listening to John
+          Mayer.
         </p>
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -47,19 +57,24 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          style={{
+            justifyItems: "center",
+            textAlign: "center",
+            color: "grey",
+          }}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+          <p>
+            [ Built using TypeScript + Next.js ]
+            <br />
+            Copyright &#169; 2021. All Rights Reserved.
+          </p>
+        </div>
       </footer>
     </div>
-  )
+  );
 }
